@@ -28,7 +28,7 @@ def returnTime(message):
 def returnJoke(message):
     greets = ["hello","hey","hi","greetings"] #Replying to certain keywords
     for greet in greets:
-        if greet in message.text:
+        if greet in message.text.lower():
             ChuckBot.send_message(message.chat.id,"Chuck Norris doesn't say " + greet + ', ' + greet + " says Chuck Norris")
             break
     else:
