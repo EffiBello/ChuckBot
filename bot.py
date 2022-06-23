@@ -12,13 +12,10 @@ ChuckBot = telebot.TeleBot(key)
 def returnHelp(message):
     ChuckBot.reply_to(message,"""
     This ChuckBot was created by Effi Bello.
-You may enter anything and Chuck will answer accordingly.
-Enter a number between 1-101 in order to get one of his jokes
-(Chuck wouldn't appreciate if you'd be pushing his limits).
-You can also ask for the time by using /time.
-        
-    """) 
-    
+    You may enter anything and Chuck will answer accordingly.
+    Enter a number between 1-101 in order to get one of his jokes
+    (Chuck wouldn't appreciate if you'd be pushing his limits).
+    You can also ask for the time by using /time. """)    
 
 @ChuckBot.message_handler(commands=["time"])   
 def returnTime(message):
