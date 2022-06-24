@@ -8,7 +8,7 @@ with open('key.json','r') as keyFile:
 
 ChuckBot = telebot.TeleBot(key)
 
-@ChuckBot.message_handler(commands=["help"])
+@ChuckBot.message_handler(commands=["start"])
 def returnHelp(message):
     ChuckBot.reply_to(message,"""
     This ChuckBot was created by Effi Bello.
